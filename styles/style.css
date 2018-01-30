@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #DEB887;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+header {
+    height: 100vh;
+    background-color: #603101;
+}
+
+.logo {
+    position: fixed;
+    padding: 1%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.logo__image {
+    max-width: 100%;
+}
+
+.header__welcome-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.header__welcome-text--main {
+    padding: 5%;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+}
+
+.header__welcome-text--secondary {
+    padding: 2%;
+    font-size: 1em;
+}
+
+.header__welcome-text--logo {
+    padding: 3%;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+}
+
+.main-navigation {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+.main-navigation ul {
+    list-style-type: none;
+}
+
+.main-navigation li {
+    margin-bottom: 30%;
+}
+
+.main-navigation li a {
+    text-decoration: none;
+}
+
+.section {
+    background: crimson;
+    border: 10px solid;
+}
+
+.section__header {
+    margin-bottom: 4%;
+}
+
+.members {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.members__box {
+    width: 250px;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.concerts {
+    margin: 0 auto;
+    padding: 10%;
+    background: #ffffff;
+}
+
+.concerts caption {
+    text-align: left;
+    font-size: 1.2em;
+    padding-bottom: 2%;
+}
+
+.concerts table {
+    text-align: left;
+}
+
+.concerts td:first-of-type{
+    padding-right: 1em;
+}
+
+.concerts td {
+    font-size: .8em;
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding: 10% 0;
+    letter-spacing: .5em;
+}
