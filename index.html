@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/sklep_z_ptasimi_piorami-logo.png">
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Sklep z Ptasimi Piórami</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            color: #DEB887;
+            background-color: #603101;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .welcome {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+
+        .welcome h1 {
+            padding: 5%;
+            font-size: 2em;
+            letter-spacing: 0.2em;
+        }
+
+        .welcome h2 {
+            padding: 2%;
+            font-size: 1em;
+        }
+
+        .welcome h2:last-of-type {
+            padding: 3%;
+            font-size: 1.2em;
+            letter-spacing: 0.1em;
+        }
+
+        .concerts {
+            margin: 0 auto;
+            padding: 10%;
+        }
+
+        .concerts caption {
+            text-align: left;
+            font-size: 1.2em;
+            padding-bottom: 2%;
+        }
+
+        .concerts table {
+            text-align: left;
+        }
+
+        .concerts td:first-of-type{
+            padding-right: 1em;
+        }
+
+        .concerts td {
+            font-size: .8em;
+        }
+
+        .social {
+            width: 100%;
+            text-align: center;
+            font-size: 2em;
+            padding: 10% 0;
+            letter-spacing: .5em;
+        }
+
+        @media screen and (min-width: 630px) {
+            .welcome h1 {
+                padding: 1%;
+                font-size: 4em;
+                letter-spacing: 0.2em;
+            }
+
+            .welcome h2 {
+                padding: 2%;
+                font-size: 1.5em;
+            }
+
+            .welcome h2:last-of-type {
+                padding: 3%;
+                font-size: 2em;
+                letter-spacing: 0.1em;
+            }
+
+            .concerts caption {
+                font-size: 1.2em;
+            }
+        }
+
+        @media screen and (min-height: 630px) {
+            .welcome {
+                top: 40%;
+            }
+
+            .social {
+                position: absolute;
+                bottom: 2%;
+                padding: 0;
+            }
+
+            .concerts {
+                position: absolute;
+                bottom: 15%;
+                padding: 5%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="welcome">
+            <h1>Już wkrótce!</h1>
+            <h2>będzie tu zupełnie nowa strona zespołu</h2>
+            <h2>Sklep z Ptasimi Piórami</h2>
+        </div>
+    </header>
+    <section class="concerts">
+        <table>
+            <caption>Nadchodzące wydarzenia:</caption>
+            <tr>
+                <td>10.02.2018</td>
+                <td>Dom Kultury "Klub Skolwin" - Szczecin</td>
+            </tr>
+            <tr>
+                <td>11.03.2018</td>
+                <td>Filharmonia Szczecińska – Sklep z Ptasimi Piórami symfonicznie – koncert z okazji Jubileuszu 40 lecia</td>
+            </tr>
+        </table>
+    </section>
+    <section class="social">
+        <a href="mailto:sklepzptasimi@gmail.com"><i class="fas fa-envelope-square"></i></a>
+        <a href="http://www.facebook.com/sklepzptasimipiorami"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com/c/SklepzPtasimiPiórami"><i class="fab fa-youtube"></i></a>
+    </section>
+</body>
+</html>
