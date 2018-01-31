@@ -5,23 +5,24 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
 
-header {
+.page-header {
     height: 100vh;
     background-color: #603101;
 }
 
 .logo {
-    position: fixed;
     padding: 1%;
-    left: 0;
-    right: 0;
+    display: block;
     text-align: center;
 }
 
@@ -68,29 +69,33 @@ header {
     margin-bottom: 30%;
 }
 
-.main-navigation li a {
-    text-decoration: none;
+.content {
+    width: 100%;
+    background: #604d43;
 }
 
-.section {
-    background: crimson;
-    border: 10px solid;
+.content__box {
+    max-width: 1200px;
+    background: inherit;
+    padding: 5%;
+    margin: 0 auto;
 }
 
-.section__header {
+.content__header {
     margin-bottom: 4%;
 }
 
 .members {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .members__box {
-    width: 250px;
+    width: 200px;
     max-width: 100%;
+    padding: 3%;
     text-align: center;
     margin-bottom: 4%;
 }
@@ -111,7 +116,7 @@ header {
     text-align: left;
 }
 
-.concerts td:first-of-type{
+.concerts td:first-of-type {
     padding-right: 1em;
 }
 
@@ -120,9 +125,17 @@ header {
 }
 
 .social {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    padding: 5%;
+}
+
+.social__icon {
     font-size: 2em;
-    padding: 10% 0;
-    letter-spacing: .5em;
+}
+
+.copyright {
+    text-align: center;
+    padding: 2%;
 }
