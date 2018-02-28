@@ -1,58 +1,79 @@
 * {
-    margin: 0;
     font-family: 'Lato', sans-serif;
-    color: #DEB887;
-    box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+/*main {*/
+    /*!*display: flex;*!*/
+    /*flex-direction: column;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+.blue-section, .white-section, .grey-section {
+    height: 80vh;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+.blue-section {
+    background: #4F8EB2;
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+.white-section {
+    background: #ffffff;
+    opacity: 1;
+    color: #878A8F;
+}
+
+.grey-section {
+    background: #878A8F;
+    opacity: 1;
+    color: #ffffff;
+}
+
+.lightgrey-section, .lightgrey-section a  {
+    background: #d6d6d6;
+    opacity: 1;
+    color: #878A8F;
 }
 
 .page-header {
     height: 100vh;
-    background-color: #603101;
+    background-color: #ffffff;
+    background-size: cover;
+    position: relative;
 }
 
-.logo {
-    padding: 1%;
+.feather {
     display: block;
-    text-align: center;
-}
-
-.logo__image {
-    max-width: 100%;
-}
-
-.header__welcome-text {
     position: absolute;
-    width: 100%;
     top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-}
-
-.header__welcome-text--main {
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    max-width: 100%;
     padding: 5%;
-    font-size: 2em;
-    letter-spacing: 0.2em;
 }
 
-.header__welcome-text--secondary {
-    padding: 2%;
-    font-size: 1em;
+.main-logo {
+    float: right;
+    padding-top: 72px;
 }
 
-.header__welcome-text--logo {
-    padding: 3%;
-    font-size: 1.2em;
-    letter-spacing: 0.1em;
+.main-logo span {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #4F8EB2;
+    margin-right: .5em;
+    line-height: 50px;
+    /*text-shadow: 0 0 1px #4F8EB2, 0 0 2px #4F8EB2, 0 0 3px #4F8EB2;*/
+    font-family: 'Mukta Malar', sans-serif;
+    font-weight: bold;
+}
+
+.main-logo__square {
+    float: right;
+    width: 30px;
+    height: 50px;
+    background: #878A8F;
 }
 
 .main-navigation {
@@ -61,54 +82,38 @@ main {
     right: 5%;
 }
 
-.main-navigation ul {
-    list-style-type: none;
-}
-
 .main-navigation li {
     margin-bottom: 30%;
 }
 
-.content {
-    width: 100%;
-    background: #604d43;
-}
-
-.content__box {
-    max-width: 1200px;
-    background: inherit;
-    padding: 5%;
-    margin: 0 auto;
+.main-navigation a {
+    text-transform: uppercase;
+    font-weight: bold;
+    /*font-size: 1.2em;*/
+    color: #888B90;
 }
 
 .content__header {
     margin-bottom: 4%;
+    text-transform: uppercase;
+    width: 100%;
 }
 
-.members {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.about {
+    text-align: justify;
 }
 
 .members__box {
-    width: 200px;
-    max-width: 100%;
+    /*width: 200px;*/
+    /*max-width: 100%;*/
     padding: 3%;
     text-align: center;
     margin-bottom: 4%;
 }
 
-.concerts {
-    margin: 0 auto;
-    padding: 10%;
-    background: #ffffff;
-}
-
 .concerts caption {
     text-align: left;
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
     padding-bottom: 2%;
 }
 
@@ -121,21 +126,97 @@ main {
 }
 
 .concerts td {
-    font-size: .8em;
+    font-size: 1.5rem;
 }
 
-.social {
-    display: flex;
-    flex-direction: column;
-    font-size: 1em;
-    padding: 5%;
+.archive {
+    /*align-self: flex-end;*/
+    margin-top: 25%;
 }
 
-.social__icon {
-    font-size: 2em;
+footer h3 {
+    padding: 4%;
+}
+
+.logo-stamp, .social, .contact, .files {
+    text-align: center;
+}
+
+.logo-stamp {
+    padding: 2%;
+}
+
+.social, .contact, .files {
+    padding: 1% 0;
+}
+
+.logo-stamp img{
+    max-width: 100px;
+}
+
+.contact  i, .files i, .social i {
+    width: 40px;
+    background: #888B90;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social i:before, .files i:before, .contact i:before  {
+    line-height: 40px;
+}
+
+.contact ul {
+    width: 290px;
+    display: table;
+    margin: 0 auto;
+}
+
+.contact li {
+    float: left;
+}
+
+.files {
+
 }
 
 .copyright {
     text-align: center;
     padding: 2%;
+    margin-top: 10%;
+}
+
+@media (min-width: 576px) {
+    .main-logo {
+        padding-top: 72px;
+    }
+
+    .main-logo span {
+        font-size: 2.5rem;
+        margin-right: .5em;
+        line-height: 70px;
+    }
+
+    .main-logo__square {
+        width: 30px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-logo {
+        padding-top: 72px;
+    }
+
+    .main-logo span {
+        font-size: 4.5rem;
+        margin-right: .5em;
+        line-height: 90px;
+    }
+
+    .main-logo__square {
+        width: 50px;
+        height: 90px;
+    }
 }
