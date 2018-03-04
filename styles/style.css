@@ -46,35 +46,36 @@
 .feather {
     display: block;
     position: absolute;
-    top: 50%;
+    bottom: 0;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    max-width: 100%;
-    padding: 5%;
+    transform: translateX(-50%);
+    max-width: 1000px;
+    padding: 1%;
 }
 
 .main-logo {
-    float: right;
+    /*float: right;*/
+    text-align: center;
     padding-top: 72px;
 }
 
 .main-logo span {
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: #4F8EB2;
+    color: #298e82;
     margin-right: .5em;
     line-height: 50px;
     /*text-shadow: 0 0 1px #4F8EB2, 0 0 2px #4F8EB2, 0 0 3px #4F8EB2;*/
     font-family: 'Mukta Malar', sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
-.main-logo__square {
-    float: right;
-    width: 30px;
-    height: 50px;
-    background: #878A8F;
-}
+/*.main-logo__square {*/
+    /*float: right;*/
+    /*width: 30px;*/
+    /*height: 50px;*/
+    /*background: #878A8F;*/
+/*}*/
 
 .main-navigation {
     position: absolute;
