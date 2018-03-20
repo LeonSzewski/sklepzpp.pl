@@ -43,13 +43,13 @@
     position: relative;
 }
 
-.feather {
+.main-image {
     display: block;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 1000px;
+    max-width: 900px;
     padding: 1%;
 }
 
@@ -76,6 +76,12 @@
     /*height: 50px;*/
     /*background: #878A8F;*/
 /*}*/
+
+.panel {
+    position: fixed;
+    left: -15.625em; /*right or left and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+}
 
 .main-navigation {
     position: absolute;
