@@ -9,7 +9,7 @@
 /*}*/
 
 .blue-section, .white-section, .grey-section {
-    height: 80vh;
+    min-height: 100vh;
 }
 
 .blue-section {
@@ -39,36 +39,31 @@
 .page-header {
     height: 100vh;
     background-color: #ffffff;
-    background-size: cover;
-    position: relative;
+    text-align: center;
+}
+
+.main-logo {
+    display: inline-block;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+
+.main-logo span {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #298e82;
+    /*text-shadow: 0 0 1px #4F8EB2, 0 0 2px #4F8EB2, 0 0 3px #4F8EB2;*/
+    font-family: 'Mukta Malar', sans-serif;
+    /*font-weight: bold;*/
 }
 
 .main-image {
     display: block;
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
     width: 900px;
     max-width: 100%;
     padding: 1%;
-}
-
-.main-logo {
-    /*float: right;*/
-    text-align: center;
-    padding-top: 72px;
-}
-
-.main-logo span {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: #298e82;
-    margin-right: .5em;
-    line-height: 50px;
-    /*text-shadow: 0 0 1px #4F8EB2, 0 0 2px #4F8EB2, 0 0 3px #4F8EB2;*/
-    font-family: 'Mukta Malar', sans-serif;
-    /*font-weight: bold;*/
+    margin: 0 auto;
 }
 
 .main-navigation {
@@ -200,14 +195,8 @@ footer h3 {
 }
 
 @media (min-width: 576px) {
-    .main-logo {
-        padding-top: 72px;
-    }
-
     .main-logo span {
         font-size: 2.5rem;
-        margin-right: .5em;
-        line-height: 70px;
     }
 
     .main-logo__square {
@@ -217,14 +206,8 @@ footer h3 {
 }
 
 @media (min-width: 768px) {
-    .main-logo {
-        padding-top: 72px;
-    }
-
     .main-logo span {
-        font-size: 4.5rem;
-        margin-right: .5em;
-        line-height: 90px;
+        font-size: 3.5rem;
     }
 
     .main-logo__square {
@@ -233,17 +216,8 @@ footer h3 {
     }
 }
 
-.slicknav_menu {
-    /*display:none;*/
-}
-
-@media screen and (max-width: 40em) {
-    /* #menu is the original menu */
-    .js #menu {
-        display:none;
-    }
-
-    .js .slicknav_menu {
-        display:block;
+@media (min-width: 992px) {
+    .main-logo span {
+        font-size: 4.5rem;
     }
 }
