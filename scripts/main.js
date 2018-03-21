@@ -14,7 +14,16 @@ const $menuButton = $('#menu-button');
 
 $menu.sliiide(settings);
 
-$menuButton.on('click', function () {
-    $menuButton.toggleClass('is-active')
-});
+var unclicked = true;
 
+$menuButton.on('click', function () {
+
+    if (unclicked) {
+        $menuButton.addClass('is-active');
+        return unclicked = false;
+    } else {
+        $menuButton.removeClass('is-active');
+        return unclicked = true
+    }
+
+});
