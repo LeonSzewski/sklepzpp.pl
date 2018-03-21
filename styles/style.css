@@ -44,12 +44,7 @@
 
 .main-logo {
     display: inline-block;
-    padding-top: 5%;
-    margin: 0 auto;
-}
-
-.main-logo span {
-    text-align: center;
+    padding-top: 3%;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: #298e82;
@@ -60,10 +55,10 @@
 
 .main-image {
     display: block;
-    width: 900px;
-    max-width: 100%;
+    max-width: 100vw;
     padding: 1%;
     margin: 0 auto;
+    max-height: 77vh;
 }
 
 .main-navigation {
@@ -195,7 +190,7 @@ footer h3 {
 }
 
 @media (min-width: 576px) {
-    .main-logo span {
+    .main-logo {
         font-size: 2.5rem;
     }
 
@@ -206,7 +201,7 @@ footer h3 {
 }
 
 @media (min-width: 768px) {
-    .main-logo span {
+    .main-logo {
         font-size: 3.5rem;
     }
 
@@ -217,7 +212,7 @@ footer h3 {
 }
 
 @media (min-width: 992px) {
-    .main-logo span {
+    .main-logo {
         font-size: 4.5rem;
     }
 }
