@@ -11,12 +11,13 @@ var settings = {
 
 const $menu = $('#menu');
 const $menuButton = $('#menu-button');
+const $menuToggleElement = $('#menu-button, .main-navigation a');
 
 $menu.sliiide(settings);
 
-var unclicked = true;
+let unclicked = true;
 
-$menuButton.on('click', function () {
+$menuToggleElement.on('click', function () {
 
     if (unclicked) {
         $menuButton.addClass('is-active');
