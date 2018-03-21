@@ -1,5 +1,5 @@
 var settings = {
-    toggle: "#sliiider-toggle, .main-logo", // the selector for the menu toggle, whatever clickable element you want to activate or deactivate the menu. A click listener will be added to this element.
+    toggle: "#menu-button", // the selector for the menu toggle, whatever clickable element you want to activate or deactivate the menu. A click listener will be added to this element.
     exit_selector: ".slider-exit", // the selector for an exit button in the div if needed, when the exit element is clicked the menu will deactivate, suitable for an exit element inside the nav menu or the side bar
     animation_duration: "0.5s", //how long it takes to slide the menu
     place: "right", //where is the menu sliding from, possible options are (left | right | top | bottom)
@@ -9,4 +9,12 @@ var settings = {
     auto_close: true //set to true if you want the slider to auto close everytime a child link of it is clicked
 };
 
-$('#menu').sliiide(settings); //initialize sliiide
+const $menu = $('#menu');
+const $menuButton = $('#menu-button');
+
+$menu.sliiide(settings);
+
+$menuButton.on('click', function () {
+    $menuButton.toggleClass('is-active')
+});
+
