@@ -46,10 +46,11 @@
 .main-image {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 900px;
+    width: 900px;
+    max-width: 100%;
     padding: 1%;
 }
 
@@ -70,23 +71,44 @@
     /*font-weight: bold;*/
 }
 
-/*.main-logo__square {*/
-    /*float: right;*/
-    /*width: 30px;*/
-    /*height: 50px;*/
-    /*background: #878A8F;*/
-/*}*/
+.nav__button {
+    height: 25px;
+    width: 25px;
+    border-bottom: 5px solid #ffffff;
+    border-top: 5px solid #ffffff;
+    background: #888B90;
+    display: block;
+    content: "";
+    position: relative;
+}
 
-.panel {
-    position: fixed;
-    left: -15.625em; /*right or left and the width of your navigation panel*/
-    width: 15.625em; /*should match the above value*/
+.nav__button {
+    display: block;
+    cursor: pointer;
+    padding: 15px;
 }
 
 .main-navigation {
+    visibility: hidden;
     position: absolute;
     bottom: 10%;
     right: 5%;
+    width: 200px;
+}
+
+.menu-link {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    font-size: 50px;
+    background: #888B90;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.menu-link a {
+    color: #4F8EB2;
 }
 
 .main-navigation li {
@@ -225,5 +247,20 @@ footer h3 {
     .main-logo__square {
         width: 50px;
         height: 90px;
+    }
+}
+
+.slicknav_menu {
+    /*display:none;*/
+}
+
+@media screen and (max-width: 40em) {
+    /* #menu is the original menu */
+    .js #menu {
+        display:none;
+    }
+
+    .js .slicknav_menu {
+        display:block;
     }
 }
