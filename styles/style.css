@@ -106,11 +106,12 @@
 }
 
 .members__box img {
+    border-radius: 50%;
     max-width: 100%;
 }
 
-.members__box--grey {
-    filter: grayscale(100%) contrast(90%);
+.members__box h3 {
+    margin-top: 10px;
 }
 
 .dyscography {
@@ -245,7 +246,7 @@ footer h3 {
     .main-logo {
         font-size: 4.5rem;
     }
-    
+
     .dyscography__main {
         float: left;
         width: 40%;
