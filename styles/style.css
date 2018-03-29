@@ -98,8 +98,26 @@
     width: 100%;
 }
 
-.about {
+.about li, .about p {
     text-align: justify;
+}
+
+.about p {
+    margin-bottom: 5%;
+}
+
+.about ul {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.about li {
+    margin-bottom: 150px;
+}
+
+.about strong {
+    margin-top: 30px;
+    float: right;
 }
 
 .members__box {
