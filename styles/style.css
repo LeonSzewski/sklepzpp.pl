@@ -113,33 +113,40 @@
     filter: grayscale(100%) contrast(90%);
 }
 
-.dyscography__container {
-    display: flex;
+.dyscography {
     width: 100%;
 }
 
-.dyscography__item {
-
+.dyscography__main {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.dyscography__item img {
-    width: 200px;
+.dyscography__main img {
     max-width: 100%;
 }
 
-.dyscography__item--big {
-    /*max-width: 400px;*/
-    /*width: 400px;*/
+.dyscography__main--item {
+    padding: 5px;
 }
 
-.dyscography__item--big img{
-    /*width: 400px;*/
-    /*width: 100%;*/
+.dyscography__arch{
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.dyscography__arch img {
+    max-width: 100%;
+}
+
+.dyscography__arch--item {
+    padding: 5px;
 }
 
 .concerts caption {
     text-align: left;
-    /*font-size: 1.2em;*/
     padding-bottom: 2%;
 }
 
@@ -156,7 +163,6 @@
 }
 
 .archive {
-    /*align-self: flex-end;*/
     margin-top: 25%;
 }
 
@@ -238,5 +244,29 @@ footer h3 {
 @media (min-width: 992px) {
     .main-logo {
         font-size: 4.5rem;
+    }
+    
+    .dyscography__main {
+        float: left;
+        width: 40%;
+    }
+
+    .dyscography__main--item {
+        padding: 5px;
+    }
+
+    .dyscography__arch{
+        float: left;
+        width: 60%;
+    }
+
+    .dyscography__arch img {
+        max-width: 100%;
+    }
+
+    .dyscography__arch--item {
+        float: left;
+        padding: 5px;
+        width: 33.33%;
     }
 }
