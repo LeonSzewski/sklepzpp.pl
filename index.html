@@ -3,156 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/sklep_z_ptasimi_piorami-logo.png">
-    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/sklep_z_ptasimi_piorami-stamp.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Mukta+Malar">
+    <link href="styles/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/simple-grid.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Sklep z Ptasimi Piórami</title>
-    <style>
-        * {
-            margin: 0;
-            font-family: 'Lato', sans-serif;
-            color: #DEB887;
-            background-color: #603101;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            height: 100vh;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .welcome {
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: center;
-        }
-
-        .welcome h1 {
-            padding: 5%;
-            font-size: 2em;
-            letter-spacing: 0.2em;
-        }
-
-        .welcome h2 {
-            padding: 2%;
-            font-size: 1em;
-        }
-
-        .welcome h2:last-of-type {
-            padding: 3%;
-            font-size: 1.2em;
-            letter-spacing: 0.1em;
-        }
-
-        .concerts {
-            margin: 0 auto;
-            padding: 10%;
-        }
-
-        .concerts caption {
-            text-align: left;
-            font-size: 1.2em;
-            padding-bottom: 2%;
-        }
-
-        .concerts table {
-            text-align: left;
-        }
-
-        .concerts td:first-of-type{
-            padding-right: 1em;
-        }
-
-        .concerts td {
-            font-size: .8em;
-        }
-
-        .social {
-            width: 100%;
-            text-align: center;
-            font-size: 2em;
-            padding: 10% 0;
-            letter-spacing: .5em;
-        }
-
-        @media screen and (min-width: 630px) {
-            .welcome h1 {
-                padding: 1%;
-                font-size: 4em;
-                letter-spacing: 0.2em;
-            }
-
-            .welcome h2 {
-                padding: 2%;
-                font-size: 1.5em;
-            }
-
-            .welcome h2:last-of-type {
-                padding: 3%;
-                font-size: 2em;
-                letter-spacing: 0.1em;
-            }
-
-            .concerts caption {
-                font-size: 1.2em;
-            }
-        }
-
-        @media screen and (min-height: 630px) {
-            .welcome {
-                top: 40%;
-            }
-
-            .social {
-                position: absolute;
-                bottom: 2%;
-                padding: 0;
-            }
-
-            .concerts {
-                position: absolute;
-                bottom: 15%;
-                padding: 5%;
-            }
-        }
-
-    </style>
 </head>
 <body>
-    <header>
-        <div class="welcome">
-            <h1>Już wkrótce!</h1>
-            <h2>będzie tu zupełnie nowa strona zespołu</h2>
-            <h2>Sklep z Ptasimi Piórami</h2>
+<header class="page-header">
+    <!--<div class="main-logo">-->
+    <span class="main-logo">Sklep z Ptasimi Piórami</span>
+    <!--</div>-->
+    <div>
+        <img class="main-image" src="images/face.png">
+    </div>
+</header>
+<button id="menu-button" class="hamburger hamburger--elastic menu-button" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+</button>
+
+<nav id="menu" class="main-navigation">
+    <ul>
+        <li><a href="#about"></a></li>
+        <li><a href="#members">Skład</a></li>
+        <li><a href="#concerts">Koncerty</a></li>
+        <li><a href="#dyscography">Dyskografia</a></li>
+        <li><a href="#footer">Do pobrania</a></li>
+        <li><a href="#footer">Kontakt</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="about" class="blue-section grid-box">
+        <div class="grid-big-box">
+            <h1 class="content__header">O zespole</h1>
+            <article class="grid_1-1">
+                <p class="about">Sklep z Ptasimi Piórami zagrał po raz pierwszy 8 marca 1978 roku w Szczecinie i do tej
+                    pory
+                    jest wizytówką kulturalną swojego miasta. Sklep zwyciężał wielokrotnie na festiwalach
+                    piosenki i jest ciągle żywo odbierany zarówno przez publiczność swojego pokolenia, jak i
+                    nową, nieraz bardzo młodą. Każdy koncert zespołu, to niepowtarzalne spotkanie z
+                    dynamiczną muzyką i mądrymi tekstami. Niezwykłymi wydarzeniami dla muzyków Sklepu
+                    były wspólne występy z takimi artystami jak: pianista grupy YES – Rick Wakeman, czy
+                    wybitny wokalista jazzowy – Bobby McFerrin. Sklep z Ptasimi Piórami wydał 7 autorskich płyt
+                    CD, nagrał wiele programów telewizyjnych i audycji radiowych. Koncertował w całej Polsce, a
+                    także w Austrii, Szwecji, Niemczech i we Francji.</p>
+                <ul>
+                    <li>
+                        „Więź sentymentalna ze Sklepem łączy mnie od krakowskiego Studenckiego Festiwalu Piosenki w 1981
+                        roku. Cieszę się, że przez te lata przetrwały nie tylko wspomnienia,
+                        ale również witalność i radość zespołu w spotkaniach z publicznością. Sklep z Ptasimi Piórami
+                        jest zespołem uśmiechniętym, nawet, gdy jest głęboko refleksyjny.”
+                        (Janusz Deblessem – redaktor Radiowej Trójki)
+                    </li>
+                    <li>
+                        „To najprzyjemniejsze brzmienia moich studenckich lat. To sklep, do którego dziś jestem gotów
+                        stać w kolejce. „...Jeśli istnieje ktoś, kto zsyła sny...”, niech mnie przeniesie w
+                        tamten czas.” (Henryk Sawka – satyryk)
+                    </li>
+                    <li>
+                        „Wizytówką zespołu jest charakterystyczny głos Ryszarda Leoszewskiego. On też od wielu lat w
+                        jedyny i niepowtarzalny sposób przekłada niełatwe treści poetyckie na język
+                        piosenki. Niewyrażalna przestrzeń „podróży dookoła siebie” czy też „wiedzy o tym, jak nie jest”
+                        i „niewiedzy o tym, jak jest” sprawia, że coraz to nowe pokolenia odwiedzają
+                        … sklep z ptasimi piórami.” (dr Mikołaj Rykowski – muzykolog, muzyk związany z Akademią Muzyczną
+                        w Poznaniu)
+                    </li>
+                    <li>
+                        „… zespół z korzeni i klimatów kultury studenckiej wyrosły, a mimo upływu lat wierny wciąż swym
+                        artystycznym wyborom. Sprzeciwem wobec świata, domeną twórczą była
+                        dla nich prywatność, szczera, nie wstydząca się uczuć. Brzmienie gitary, wzbogacone o pulsującą
+                        obecność instrumentów perkusyjnych – od ballady po delikatną sambę – to
+                        rozpoznawalny klimat „Sklepu”. Jedynego takiego w Szczecinie.” (Artur Daniel
+                        Liskowacki – prozaik, poeta, eseista, krytyk teatralny)
+                        „…Muzyka Leoszewskiego jest wyjątkowo wyrazista i charakterystyczna, a jego znak firmowy łatwo
+                        odczytać już po pierwszych frazach. Tak jak gmerki na starych
+                        budowlach, tak i dźwięki - współbrzmienia akordów - tworzą muzyczny podpis, który pozwala bez
+                        wątpliwości rozpoznać twórcę. Melodie wprowadzają w muzyczny świat,
+                        który zachwyca nowością, a jednocześnie daje poczucie swojskości i bliskości, i gdzie, co bardzo
+                        ważne, z żadnego kąta nie wieje nudą.
+                        W jego muzyce pulsuje ta właśnie aura melodii „Krainy Łagodności”, genialnych w swej prostocie,
+                        która sprawia, że w równym stopniu poruszają serce i wtedy, gdy niesie je
+                        dźwięk pełnej orkiestry, i kilka zaledwie uderzeń gitary...” (Beata Bonik – StrefaPiosenki.pl)
+                    </li>
+
+
+                </ul>
+            </article>
         </div>
-    </header>
-    <section class="concerts">
-        <table>
-            <caption>Nadchodzące wydarzenia:</caption>
-            <tr>
-                <td>10.02.2018</td>
-                <td>Dom Kultury "Klub Skolwin" - Szczecin</td>
-            </tr>
-            <tr>
-                <td>11.03.2018</td>
-                <td>Filharmonia Szczecińska – Sklep z Ptasimi Piórami symfonicznie – koncert z okazji Jubileuszu 40 lecia</td>
-            </tr>
-        </table>
     </section>
-    <section class="social">
-        <a href="mailto:sklepzptasimi@gmail.com"><i class="fas fa-envelope-square"></i></a>
-        <a href="http://www.facebook.com/sklepzptasimipiorami"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://www.youtube.com/c/SklepzPtasimiPiórami"><i class="fab fa-youtube"></i></a>
+    <section id="members" class="white-section grid-box">
+        <div class="grid-big-box">
+            <h1 class="content__header">Skład</h1>
+            <article class="members__box grid_1-4_l grid_1-2_s grid_1-1">
+                <img class="members__box--grey" src="images/members/ryszard-leoszewski.jpg" alt="Ryszard Leoszewski">
+                <h3>Ryszard Leoszewski</h3>
+                <p>gitara, śpiew</p>
+            </article>
+            <article class="members__box grid_1-4_l grid_1-2_s grid_1-1">
+                <img src="images/members/mariusz-smolinski.jpg" alt="Mariusz Smoliński">
+                <h3>Mariusz Smoliński</h3>
+                <p>fortepian, instrumenty klawiszowe</p>
+            </article>
+            <article class="members__box grid_1-4_l grid_1-2_s grid_1-1">
+                <img src="images/members/krzysztof-ciesielski.jpg" alt="Krzysztof Ciesielski">
+                <h3>Krzysztof Ciesielski</h3>
+                <p>kontrabas</p>
+            </article>
+            <article class="members__box grid_1-4_l grid_1-2_s grid_1-1">
+                <img src="images/members/lech-grochala.jpg" alt="Lech Grochala">
+                <h3>Lech Grochala</h3>
+                <p>perkusja</p>
+            </article>
+        </div>
     </section>
+    <section id="concerts" class="grey-section grid-box">
+        <div class="grid-big-box concerts">
+            <h1 class="content__header">Koncerty</h1>
+            <article class="grid_1-1">
+                <table>
+
+                </table>
+            </article>
+            <article class="archive">
+                <h2>Archiwum</h2>
+                <table>
+                    <tr>
+                        <td>11.03.2018</td>
+                        <td>Filharmonia Szczecińska – Sklep z Ptasimi Piórami symfonicznie – koncert z okazji Jubileuszu
+                            40
+                            lecia
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10.02.2018</td>
+                        <td>Dom Kultury "Klub Skolwin" – Szczecin</td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    </section>
+    <section id="dyscography" class="white-section grid-box">
+        <div class="grid-big-box">
+            <h1 class="content__header">Dyskografia</h1>
+            <div class="dyscography">
+                <div class="dyscography__main">
+                    <div class="dyscography__main--item">
+                        <img src="images/discography/2018-taka-cie-widze.jpg">
+                    </div>
+                </div>
+                <div class="dyscography__arch">
+                    <div class="dyscography__arch--item">
+                        <img src="images/discography/2014-podroz-dookola-siebie.jpg">
+                    </div>
+                    <div class="dyscography__arch--item">
+                        <img src="images/discography/2013-o-czym-pani-marzy.jpg">
+                    </div>
+                    <div class="dyscography__arch--item">
+                        <img src="images/discography/2010-ulica-mandelsztama.jpg">
+                    </div>
+                    <div class="dyscography__arch--item">
+                        <img src="images/discography/2008-stempelek.jpg">
+                    </div>
+                    <div class="dyscography__arch--item">
+                        <img src="images/discography/2003-plynie-czas.jpg">
+                    </div>
+                    <div class="dyscography__arch--item">
+                        <img src="images/discography/1996-sklep-z-ptasimi-piorami.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="footer" class="lightgrey-section grid-box">
+    <div class="grid-big-box">
+        <article class="logo-stamp grid_1-4_m grid_1-1"><img src="images/sklep_z_ptasimi_piorami-stamp.png"></article>
+        <article class="social grid_1-4_m grid_1-1">
+            <h3>Bądź na bieżąco!</h3>
+            <!--<a class="social__link" href="http://www.facebook.com/sklepzptasimipiorami"><i class="fab fa-facebook-square social__icon"></i></a>-->
+            <!--<a class="social__link" href="https://www.youtube.com/c/SklepzPtasimiPiórami"><i class="fab fa-youtube social__icon"></i></a>-->
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-spotify"></i></a>
+        </article>
+        <article class="contact grid_1-4_m grid_1-1">
+            <h3>Kontakt</h3>
+            <ul>
+                <li>
+                    <p class="contact__link"><i class="fa fa-phone" aria-hidden="true"></i>tel: +48 603 928 854</p>
+                </li>
+                <li>
+                    <a class="contact__link" href="mailto:sklepzptasimi@gmail.com"><i class="fa fa-envelope-o"
+                                                                                      aria-hidden="true"></i>sklepzptasimi@gmail.com</a>
+                </li>
+            </ul>
+        </article>
+        <article class="files grid_1-4_m grid_1-1">
+            <h3>Dla mediów</h3>
+            <div><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i>plik</a></div>
+            <div><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i>plik</a></div>
+        </article>
+        <h4 class="copyright grid_1-1">Copyright Sklep z Ptasimi Piórami - Wszelkie prawa zastrzeżone © 2018 </h4>
+    </div>
+</footer>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+
+<script src="scripts/sliiide.min.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,141 @@
+/*
+*** Simple-Grid-System
+*** ver. 1.5.6
+*** (C) LeonSzewski 2018
+*/
+
+/*
+
+    font-size: 62.5%;  !* 1rem = 10px *!
+    font-size: 125%;    !* 1rem = 20px *!
+
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+html {
+    font-size: 125%;
+}
+
+.grid-big-box, .grid-med-box, .grid-full-box, .grid-box {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: center;
+}
+
+.grid-big-box {
+    width: 1180px;
+}
+
+.grid-med-box {
+    width: 980px;
+}
+
+.grid-full-box {
+    width: 100%;
+}
+
+.grid_1-1 {
+    width: calc(12/12 * 100%);
+    margin: 0 auto;
+}
+
+.grid_1-2 {
+    width: calc(6/12 * 100%);
+    margin: 0 auto;
+}
+
+.grid-column {
+    flex-direction: column;
+}
+
+@media (min-width: 576px) {
+    .grid_1-4_s {
+        width: calc(3/12 * 100%);
+        margin: 0 auto;
+    }
+
+    .grid_3-4_s {
+        width: calc(9/12 * 100%);
+        margin: 0 auto;
+    }
+
+
+    .grid_1-3_s {
+        width: calc(4/12 * 100%);
+        margin: 0 auto;
+    }
+
+    .grid_2-3_s {
+        width: calc(8/12 * 100%);
+        margin: 0 auto;
+    }
+
+    .grid_1-2_s {
+        width: calc(6/12 * 100%);
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid_1-4_m {
+        width: calc(3/12 * 100%);
+        margin: 0 auto;
+    }
+
+    .grid_3-4_m {
+        width: calc(9/12 * 100%);
+        margin: 0 auto;
+    }
+
+
+    .grid_1-3_m {
+        width: calc(4/12 * 100%);
+        margin: 0 auto;
+    }
+
+    .grid_2-3_m {
+        width: calc(8/12 * 100%);
+        margin: 0 auto;
+    }
+
+    .grid_1-2_m {
+        width: calc(6/12 * 100%);
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid_1-4_l {
+        width: calc(3/12 * 100%);
+        margin: 0 auto;
+    }
+
+    .grid_3-4_l {
+        width: calc(9/12 * 100%);
+        margin: 0 auto;
+    }
+
+    .grid_1-3_l {
+        width: calc(4/12 * 100%);
+        margin: 0 auto;
+    }
+
+    .grid_2-3_l {
+        width: calc(8/12 * 100%);
+        margin: 0 auto;
+    }
+
+    .grid_1-2_l {
+        width: calc(6/12 * 100%);
+        margin: 0 auto;
+    }
+}
