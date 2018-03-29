@@ -65,15 +65,21 @@
     position: fixed;
     right: 50px;
     bottom: 50px;
-    background: #888B90;
+    border: #298e82 3px solid;
+    background: #eeeeee;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     z-index: 5;
+    outline: none;
 }
 
 .menu-link a {
     color: #4F8EB2;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background: #298e82;
 }
 
 .main-navigation li {
